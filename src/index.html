@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- style -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaquery.css" />
+  </head>
+  <body>
+    <!-- code here -->
+    <div class="container">
+      <nav id="destop-nav">
+        <div class="logo">Nguyen Thien Hung</div>
+        <div>
+          <ul class="nav-link">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="mobile-nav">
+        <div class="logo">Nguyen Thien Hung</div>
+        <div class="mobile-menu">
+          <div class="mobile-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <div class="content">
+        <section class="row" id="profile">
+          <div class="section-profile-logo col-md-6">
+            <img src="./avatar.jpg" alt="profile img" class="rounded-circle" />
+          </div>
+          <div class="section-profile-content col-md-6 text-center">
+            <p>Hello, I'm</p>
+            <h1>Nguyen Thien Hung</h1>
+            <p>Back-end Developer</p>
+            <div class="btn-container">
+              <button class="btn btn-light btn-1" onclick="window.open()">
+                Dowload CV
+              </button>
+              <button class="btn btn-dark" onclick="location.href='./#contact'">
+                Contacnt Info
+              </button>
+            </div>
+          </div>
+        </section>
+        <section id="about">
+          <div class="text-center about-header">
+            <p>Get to know more</p>
+            <h1>About me</h1>
+          </div>
+          <div class="about-content">
+            <div class="about-logo">
+              <img
+                src="./z4939668973897_3968f127db6e78d5b08d9f8ee5990464.jpg"
+                alt="about me img"
+                class="about-pic"
+              />
+            </div>
+            <div class="about-detail-container">
+              <div class="about-containers">
+                <div class="details-container-about">
+                  <p><i class="bi bi-award"></i></p>
+                  <h3>Experience</h3>
+                  <p>No experiecence</p>
+                </div>
+                <div class="details-container-about">
+                  <p><i class="bi bi-book"></i></p>
+                  <h3>Education</h3>
+                  <p>Second year of FPT University</p>
+                </div>
+                <div class="">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                    laboriosam autem exercitationem alias repellendus ipsum
+                    omnis molestias minus dolore. Aut molestias facere excepturi
+                    ratione sed libero sequi, nesciunt laboriosam nisi. Lorem,
+                    ipsum dolor sit amet consectetur adipisicing elit. Neque
+                    repellendus, dolorem quo excepturi sapiente ut maxime ab
+                    sunt consequatur labore tempora commodi error repellat. Ab
+                    magnam aut laudantium quod sed. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-scroll">
+            <h1 onclick="location.href='#experience'">
+              <i class="bi bi-chevron-double-down"></i>
+            </h1>
+          </div>
+        </section>
+        <section id="experience">
+          <div class="text-center">
+            <p>My experience</p>
+            <h1>Experience</h1>
+          </div>
+          <div>
+            <div
+              class="row d-flex flex-wrap align-items-center experience-container"
+            >
+              <div class="col-md-2 m-auto pb-4">
+                <img
+                  src="./assert/c.png"
+                  alt="c"
+                  class="img-responsive mx-auto d-block"
+                />
+                <div class="text-center">C</div>
+              </div>
+              <div class="col-md-2 m-auto pb-4">
+                <img
+                  src="./assert/java.png"
+                  alt="java"
+                  class="img-responsive mx-auto d-block"
+                />
+                <div class="text-center">Java</div>
+              </div>
+              <div class="col-md-2 m-auto pb-4">
+                <img
+                  src="./assert/html5.png"
+                  alt="html5"
+                  class="img-responsive mx-auto d-block"
+                />
+                <div class="text-center">HTML</div>
+              </div>
+              <div class="col-md-2 m-auto pb-4">
+                <img
+                  src="./assert/css.png"
+                  alt="css"
+                  class="img-responsive mx-auto d-block"
+                />
+                <div class="text-center">CSS</div>
+              </div>
+              <div class="col-md-2 m-auto pb-4">
+                <img
+                  src="./assert/javascript.png"
+                  alt="javascript"
+                  class="img-responsive mx-auto d-block"
+                />
+                <div class="text-center">Javascript</div>
+              </div>
+              <div class="col-md-2 m-auto pb-4">
+                <img
+                  src="./assert/nodejs.png"
+                  alt="nodejs"
+                  class="img-responsive mx-auto d-block"
+                />
+                <div class="text-center">NodeJs</div>
+              </div>
+              <div class="col-md-2 m-auto pb-4">
+                <img
+                  src="./assert/mongodb.png"
+                  alt="mongodb"
+                  class="img-responsive mx-auto d-block"
+                />
+                <div class="text-center">MongoDb</div>
+              </div>
+              <div class="col-md-2 m-auto pb-4">
+                <img
+                  src="./assert/sql.png"
+                  alt="sql"
+                  class="img-responsive mx-auto d-block"
+                />
+                <div class="text-center">SQL Server</div>
+              </div>
+              <div class="col-md-2 m-auto pb-4">
+                <img
+                  src="./assert/git.png"
+                  alt="git"
+                  class="img-responsive mx-auto d-block"
+                />
+                <div class="text-center">Git</div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-scroll">
+            <h1 onclick="location.href='#project'">
+              <i class="bi bi-chevron-double-down"></i>
+            </h1>
+          </div>
+        </section>
+        <section id="project" class="mt-5">
+          <div class="text-center">
+            <p>Browse My Recent</p>
+            <h1>Project</h1>
+          </div>
+          <div
+            class="row d-flex flex-wrap align-items-center justify-content-around"
+          >
+            <div class="details-container-project col-md-4 text-center">
+              <div class="article-container">
+                <img
+                  src="./z4942970720640_afa9c30748dbbe06dd13ef9b364352e8.jpg"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2>Project 1</h2>
+              <button
+                class="btn btn-light"
+                onclick="location.href=`https://github.com/HungNguyen25-03/QuizReactProject`"
+                \
+              >
+                Github
+              </button>
+            </div>
+            <div class="details-container-project col-md-4 text-center">
+              <div class="article-container">
+                <img
+                  src="./z4942970720640_afa9c30748dbbe06dd13ef9b364352e8.jpg"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2>Project 1</h2>
+              <button class="btn btn-light" onclick="location.href=''">
+                Github
+              </button>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="text-center mb-5">
+            <p>Get in touch</p>
+            <h1>Contact me</h1>
+          </div>
+          <div class="row text-center contact-info">
+            <div
+              class="col-md-6 d-flex justify-content-center align-items-center"
+            >
+              <i class="bi bi-envelope-fill p-2"></i>
+              <p>thienhung27hao@gmail.com</p>
+            </div>
+            <div
+              class="col-md-6 d-flex justify-content-center align-items-center"
+            >
+              <i class="bi bi-linkedin p-2"></i>
+              <p><a href="#">Linkedln</a></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
