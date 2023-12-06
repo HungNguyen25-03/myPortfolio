@@ -18,10 +18,21 @@
     align-items: center;
     height: 17vh;
   }
+  section {
+    height: fit-content;
+  }
   .btn-scroll {
     display: none;
   }
-  .about-logo {
+  .about-pic {
+    width: 275px;
+    height: 275px;
+  }
+  .about-content {
     display: block;
+    flex-wrap: wrap;
+  }
+  .about-logo {
+    text-align: center;
   }
 }
